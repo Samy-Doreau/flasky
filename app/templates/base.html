@@ -1,0 +1,12 @@
+<html>
+    <head>
+        {% if title%}<title>{{title}} - Flasky</title>
+        {%else%}<title>Welcome to flasky</title>
+        {% endif%}
+    </head>
+    <body>
+        <div>Microblog : <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
