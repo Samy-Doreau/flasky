@@ -1,0 +1,126 @@
+2021-04-22 09:53:10,990 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-22 09:53:23,434 ERROR: Exception on /edit_profile [GET] [in c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\samy.doreau\Dropbox\Code\flasky\app\routes.py", line 88, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\samy.doreau\Dropbox\Code\flasky\app\forms.py", line 40, in __init__
+    super(EditProfileForm, self).__init_(*args, **kwargs)
+AttributeError: 'super' object has no attribute '_EditProfileForm__init_'
+2021-04-22 09:53:26,952 ERROR: Exception on /edit_profile [GET] [in c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\samy.doreau\Dropbox\Code\flasky\app\routes.py", line 88, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\samy.doreau\Dropbox\Code\flasky\app\forms.py", line 40, in __init__
+    super(EditProfileForm, self).__init_(*args, **kwargs)
+AttributeError: 'super' object has no attribute '_EditProfileForm__init_'
+2021-04-23 09:45:35,979 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 09:53:48,890 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 09:58:19,627 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 09:59:29,033 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 09:59:54,256 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:11:40,283 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:12:08,417 ERROR: Exception on /register [POST] [in c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\samy.doreau\Dropbox\Code\flasky\app\routes.py", line 64, in register
+    if form.validate_on_submit():
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\flask_wtf\form.py", line 100, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\wtforms\form.py", line 318, in validate
+    return super(Form, self).validate(extra)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\wtforms\form.py", line 150, in validate
+    if not field.validate(self, extra):
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\wtforms\fields\core.py", line 226, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\wtforms\fields\core.py", line 246, in _run_validation_chain
+    validator(form, self)
+  File "C:\Users\samy.doreau\Dropbox\Code\flasky\app\forms.py", line 24, in validate_username
+    user = User.query.filter_by(username=username.data).first()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2734, in first
+    return self.limit(1)._iter().first()
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2818, in _iter
+    result = self.session.execute(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1670, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "c:\users\samy.doreau\dropbox\code\flasky\venv\lib\site-packages\sqlalchemy\engine\default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Albert', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/14/e3q8)
+2021-04-23 10:13:12,183 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:23:14,497 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:23:27,087 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:27:58,680 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:30:04,165 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:30:27,406 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:47]
+2021-04-23 10:35:49,663 INFO: Flasky startup [in C:\Users\samy.doreau\Dropbox\Code\flasky\app\__init__.py:46]
